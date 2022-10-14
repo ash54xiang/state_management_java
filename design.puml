@@ -6,8 +6,8 @@ ExtendedContext --|> Context
 
 interface Context {
     -State _currentState
-    +void changeState() / setState()
-    +State getState()
+    +void {abstract} changeState() / setState()
+    +State {abstract} getState()
     +void logState()
 }
 
